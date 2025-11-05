@@ -1,13 +1,12 @@
 const express = require('express');
-const path = require('path');
 const app = express();
+const port = process.env.PORT || 3000;
 
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+  res.send('<h1>Welcome to the nodejs app page</h1>');
+});
 
-// Start server on port 3000 or from environment variable
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`App listening at http://0.0.0.0:${port}`);
 });
 
