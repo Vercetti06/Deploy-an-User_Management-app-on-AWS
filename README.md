@@ -19,7 +19,7 @@ This is a minimal Node.js application using Express that serves a simple "Welcom
 }
 }
 
-text
+##########################################################
 
 ### app.js
 
@@ -35,7 +35,7 @@ app.listen(port, '0.0.0.0', () => {
 console.log(App listening at http://0.0.0.0:${port});
 });
 
-text
+###########################################################
 
 ## Explanation of Code
 
@@ -55,19 +55,18 @@ text
 
 1. **Clone the repository on your EC2 instance**:
 git clone https://github.com/your-username/your-repo.git
+
 cd your-repo
 
-text
 
 2. **Install dependencies**:
 npm install
 
-text
+
 
 3. **Start the Node.js app**:
 node app.js
 
-text
 This will start the server, listening on all interfaces on port 3000.
 
 4. **Open EC2 security group inbound rules**:
@@ -77,7 +76,7 @@ This will start the server, listening on all interfaces on port 3000.
 Open a web browser and visit:
 http://<your-ec2-public-ip>:3000
 
-text
+
 You should see "Welcome to the page" displayed.
 
 6. **Stopping the app**:
